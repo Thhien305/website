@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lucky Star</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body> 
+    <header> 
+      <div class="logo">
+        <a href="trangchu.html"><img src="IMG/logo.jpg" height="200px"></a>
+      </div>
+      <div id="search">
+        <input class="timkiem" type="search" placeholder="Nhập sản phẩm muốn tìm" size="50"><button class="search1">SEARCH</button>
+        </div>
+        <div class="giohang1"><button class="cart">
+            <p><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>0</span><sup>đ</sup></p>
+        </button></div>
+    </header>
+    <nav id="top">
+        <div class="menu"><ul class="menu2">
+            <li><a href="trangchu.html">PAGE HOME</a></li>
+            <li><a href="trangsale.html">SALE</a></li>
+            <li><a href="">BRAND</a>
+            <ul class="menu1">
+                <li><a href="">ADIDAS</a></li>
+                <li><a href="">NIKE</a></li>
+                <li><a href="danhmucsp.html">JORDAN</a></li>
+                <li><a href="">PUMA</a></li>
+            </ul></li>
+            <li><a href="">APPAREL</a>
+            <ul class="menu1">
+                <li><a href="">T-SHIRTS</a></li>
+                <li><a href="">SHORT</a></li>
+                <li><a href="">HOODIES</a></li>
+                <li><a href="">SWEATER</a></li>
+            </ul></li>
+            <li><a href="">SERVICE</a>
+            <ul class="menu1">
+                <li><a href="">CONSGM</a></li>
+                <li><a href="">ORDER</a></li>
+                <li><a href="">SHOES CARE</a></li>
+            </ul></li>
+        </ul>
+       </div>
+       <div id="menu4">
+        <ul class="menu2">
+            <li><a href="">REGISTER</a>
+            <ul class="menu1">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Phone Num</a></li>
+            </ul></li>
+            <li><a href="">LOGIN</a>
+            <ul class="menu1">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Phone Num</a></li>
+            </ul></li>
+        </ul>
+       </div>
+    </nav>
+    <article id="1">
+    <div id="banner">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="IMG/g1.jpg" style="width: 800px;" height="370px">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="IMG/g4.jpg" style="width: 800px;" height="370px">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="IMG/g2.jpg" style="width:800px" height="370px">
+            </div>
+            <div class="mySlides fade">
+                <img src="IMG/g3.jpg" style="width:800px" height="370px">
+            </div>
+            <div class="mySlides fade">
+                <img src="IMG/g5.jpg" style="width:800px" height="370px">
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+          <script>
+            let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+          </script>
+    </div>
+    <div id="left">
+      <div class="left3"><b> REMARKABLE</b><br><br>
+       <a><img src="IMG/hh.jpg" width="250px" height="250px"></a>
+      </div>
+      <div class="left1"><b>PRICE (VNĐ)</b><br><br>
+      <table align="left">
+        <tr><td><a href=""><input class="checkbox" type="checkbox" name="c1"> 500.000 VNĐ - 2.000.000 VNĐ</a></td></tr>
+        <tr><td><a href=""><input type="checkbox" name="c1"> 2.000.000 VNĐ - 4.000.000 VNĐ</a></td></tr>
+        <tr><td><a href=""><input type="checkbox" name="c1"> 4.000.000 VNĐ - 6.000.000 VNĐ</a></td></tr>
+        <tr><td><a href=""><input type="checkbox" name="c1"> Lớn hơn 6.000.000 VNĐ</a></td></tr>
+      </table>
+      </div><br>
+      <div class="left2"><b>COLLECTION</b><br><br>
+        <table align="left"  >
+          <tr>
+          <td><a href="#"><input type="radio" name="c1" checked=""> SPRING</a></td></tr>
+          <tr>
+          <td><a href="#"><input type="radio" name="c1" checked=""> SUMMER</a></td></tr>
+          <tr>
+          <td><a href="#"><input type="radio" name="c1" checked=""> AUTUMN</a></td></tr>
+          <tr>
+          <td><a href="#"><input type="radio" name="c1" checked=""> WINTER</a></td></tr>
+          <tr>
+        </table>
+      </div>
+    </div>
+    <div id="right"><br><br><br><br>
+
+      <table class="abc" align="left">
+        <tr >
+        <td><img src="IMG/sp1.jpg" width="250px" height="250px"><br><label class="gia">Asics Gel Spotlyte<br><br>Best price<br>1.190.000 VNĐ</label></td>
+        <td><img src="IMG/sp2.jpg" width="250px" height="250px"><br><label class="gia">Jordan 1 Retro High-Zoom Court<br><br>Best price<br>2.750.000 VNĐ</label></td>
+        <td><img src="IMG/sp3.jpg" width="250px" height="250px"><br><label class="gia">Jordan 1 Mid SE-Multi Color<br><br>Best price<br>4.950.000 VNĐ</label></td>
+        <td><img src="IMG/sp4.jpg" width="250px" height="250px"><br><label class="gia">Puma LaMelo Ball MB.02-Rick<br><br>Best price<br>4.180.000 VNĐ</label></td>
+        </tr>
+        <tr>
+          <td><img src="IMG/sp5.jpg" width="250px" height="250px"><br><label class="gia">Nike Cosmic - Unity Ghost<br><br>Best price<br>3.990.000 VNĐ</label></td>
+          <td><img src="IMG/sp6.jpg" width="250px" height="250px"><br><label class="gia">Nike Kobe 9 Elite What the Kobe<br><br>Best price<br>15.500.000 VNĐ</label></td>
+          <td><img src="IMG/sp7.jpg" width="250px" height="250px"><br><label class="gia">Nike Kyrie 5 Low-Black White<br><br>Best price<br>2.490.000 VNĐ</label></td>
+          <td><img src="IMG/sp8.jpg" width="250px" height="250px"><br><label class="gia">Puma LaMelo Ball MB.02<br><br>Best price<br>4.950.000 VNĐ</label></td>
+        </tr>
+        <tr >
+          <td><img src="IMG/sp9.jpg" width="250px" height="250px"><br><label class="gia">Jordan 1 Mid SE-Particle<br><br>Best price<br>2.750.000 VNĐ</label></td>
+          <td><img src="IMG/sp10.jpg" width="250px" height="250px"><br><label class="gia">Nike Zoom Cortez <br><br>Best price<br>6.500.000 VN</label></td>
+          <td><img src="IMG/sp11.jpg" width="250px" height="250px"><br><label class="gia">Nike Air Max 1-Crepe Soft <br><br>Best price<br> 3.490.000 VNĐ</label></td>
+          <td><img src="IMG/sp12.jpg" width="250px" height="250px"><br><label class="gia">Jordan 1 Mid-Barely (Women's)<br><br>Best price<br>4.650.000 VNĐ</label></td>
+          </tr>
+      </table>
+    </div></article>
+    
+    <footer>
+        <div id="f1"><pre>
+        Facebook : The Lucky Star<br>
+        Địa chỉ      : 447 P. Bạch Mai, Bạch Mai, Hai Bà Trưng, Hà Nội <br>
+        Hotline      : 19001234 <br>
+        Email        : theluckystarvn@gmail.com
+      </pre>
+      </div>
+      <div id="f2">
+        <pre>
+        Hỗ trợ khách hàng<br>
+        Khách hàng thân thiết<br>
+        Chính sách bảo hành<br></pre>
+    </footer>
+</body>
+</html>

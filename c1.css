@@ -1,0 +1,57 @@
+.cart1 h2 {
+    margin-bottom: 20px;
+}
+
+.cart1 table {
+    width: 100%;
+}
+
+.cart1 table thead tr th:first-child {
+    text-align: left;
+}
+
+.cart1 table tr td {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.cart1 table thead tr th:last-child {
+    text-align: left;
+}
+
+.cart1 table tbody tr td:last-child {
+    text-align: right;
+}
+
+.cart1 button {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 7px 39px;
+    color: #ffffff !important;
+    border-radius: 5px;
+    background: #e41818;
+    border: 1px solid #9B6A1D;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.cart1 button:hover {
+    background: rgb(158, 158, 158);
+}
+
+.cart1 {
+    position: fixed;
+    width: 70%;
+    ;
+    top: 110px;
+    background-color: #cacaca;
+    padding: 12px 20px;
+    overflow-y: scroll;
+    border-radius: 30px;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    margin-left: 15%;
+    height: 550px;
+    right: -100%;
+    transition: all 0.3s ease;
+}
